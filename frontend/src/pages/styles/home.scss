@@ -1,0 +1,53 @@
+body{
+    overflow-y: scroll!important;
+}
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.verticalrow {
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+
+.col-md-4{
+    
+    .imagecontent{
+        border-radius: 10px;
+        .image{
+            height:100%;
+            width: 100%;
+            object-fit: inherit;
+            border-radius: 10px;
+        }
+        .overlayType{
+            position:relative;
+            top: 4vh;
+            display: flex;
+            left: 210px;
+            .badge{
+                color: #fff!important;
+            }
+        }
+        .overlayPoin{
+            position: relative;
+            bottom: 5vh;
+            left: 1vw;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 800;
+        }
+    }
+    .titleproduct{
+        margin-bottom: 1em;
+        font-size: 18px;
+        font-weight: 800;
+        color: #333;
+    }
+}
