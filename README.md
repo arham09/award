@@ -34,4 +34,16 @@ To run this project via nodejs
   npm run start
 ```
 
+## Access
+
+you can access the services by
+
+```bash
+  $access backend  
+  http://localhost:8000
+
+  $access frontend
+  http://localhost:3000
+```
+
 
