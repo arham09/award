@@ -4,15 +4,14 @@ const controller = require('../../controllers/auth.controller');
 const rules = require('../../validations/auth.validation');
 
 /**
- * @api {post} v1/auth/login/sso Login SSO Telkom
+ * @api {post} v1/auth/login Login
  * @apiDescription Get an accessToken
  * @apiVersion 1.0.0
- * @apiName Login SSO
+ * @apiName Login
  * @apiGroup Auth
  * @apiPermission public
  *
- * @apiParam  {String}  username  User's email
- * @apiParam  {String}  password  User's password
+ * @apiParam  {String}  email  User's email
  *
  * @apiSuccess (Success 200) {String}  data.accessToken     Access Token's type
  * @apiSuccess (Success 200) {String}  data.refreshToken    Token to get a new accessToken
@@ -27,8 +26,8 @@ const rules = require('../../validations/auth.validation');
  *              "accessToken": "eausadnajsdnl12312elk1m",
  *              "refreshToken": "123jkndajsdnakjdn",
  *              "user": {
- *                  "fullName": "ALFA PUTRA",
- *                  "profilePicture": ""
+ *                  "id": "1",
+ *                  "name": "User Name"
  *                  }
  *              }
  *      }
