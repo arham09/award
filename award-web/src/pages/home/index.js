@@ -102,8 +102,10 @@ const IndexHome = () => {
   const onSubmit = async (e, filters) => {
     e.preventDefault();
     setFilters(filters);
+
     await loadData(filters, GetAuth.data.accessToken);
   };
+
 
   return (
     <>

@@ -65,10 +65,12 @@ const Filter = (props) => {
       });
       document.getElementById("rangeinput").value = 0;
       setCheckedState(new Array(data.data.length).fill(false));
+      setAllCheckedState(false);
     }
     if (type === "type") {
       setFilters({ ...filters, limit: 5, type: [], typeId: [], page: 1 });
       setCheckedState(new Array(data.data.length).fill(false));
+      setAllCheckedState(false);
     }
     if (type === "point") {
       setFilters({
