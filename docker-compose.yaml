@@ -34,3 +34,27 @@ services:
       - "16543:80"
     depends_on:
       - postgres
+
+  member_api:
+    build: api-services
+    container_name: member_api
+    ports:
+      - 8000:8000
+    depends_on:
+      - postgres
+    environment:
+      WAIT_HOSTS: postgres:5432
+    volumes:
+      - ./api-services/.env.docker:/usr/src/app/.env
+
+  member_web:
+    build: award-web
+    container_name: member_web
+    ports:
+      - 3000:3000
+    depends_on:
+      - member_api
+    environment:
+      WAIT_HOSTS: member_api:8000
+    volumes:
+      - ./award-web/.env.docker:/usr/src/app/.env
