@@ -17,8 +17,8 @@ const rules = require('../../validations/auth.validation');
  * @apiSuccess (Success 200) {String}  data.refreshToken    Token to get a new accessToken
  *                                                          after expiration time
  *
- * @apiSuccess (Success 200) {String}  data.user.fullName        User's name
- * @apiSuccess (Success 200) {String}  data.user.profilePicture  User's profile picture
+ * @apiSuccess (Success 200) {Number}  data.user.id         User's id
+ * @apiSuccess (Success 200) {String}  data.user.name       User's name
  * @apiSuccessExample {json} Success-Example
  *     HTTP/1.1 200 OK
  *      {
