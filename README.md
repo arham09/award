@@ -15,7 +15,7 @@ To run this project via docker
   docker-compose up
 ```
 
-To run this project via docker
+To run this project via nodejs
 
 ```bash
   $run backend  
